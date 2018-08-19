@@ -1,0 +1,27 @@
+{
+  "name": "travel-site-tut",
+  "version": "1.0.0",
+  "description": "a fictional site for a tutorial",
+  "main": "index.js",
+  "dependencies": {
+    "jquery": "^3.3.1",
+    "normalize.css": "^8.0.0"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/danyn/travel-site-tut.git"
+  },
+  "keywords": [
+    "fictional"
+  ],
+  "author": "Daniel Eisen",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/danyn/travel-site-tut/issues"
+  },
+  "homepage": "https://github.com/danyn/travel-site-tut#readme"
+}
