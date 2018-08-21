@@ -2,15 +2,16 @@
 <html>
 <head>
 	<meta name="viewport" content="width=device-width, initial-scale=1" />
-	<link href='https://fonts.googleapis.com/css?family=Roboto:400,100,300,500,700' rel='stylesheet' type='text/css'>
+	<link href="https://fonts.googleapis.com/css?family=Roboto:100,300,400" rel="stylesheet">
+	<link rel="stylesheet" href="./compiled/styles/style.css">
 	<title>Clear View Escapes</title>
 	<meta name="keywords" content="Travel planning, travel bundles, travel escapes, book hotels in victoria BC">
-	<meta name="description" content="Your clarity. One trip away. We create soul restoring journeys that inspire you to be you.">
+	<meta name="description" content="Your clarity. One trip away. We create soul restoring journeys that inspire you to be you. You won't forget yourself! ever.">
 </head>
 <body>
 	<header>
 		<img src="assets/images/icons/clear-view-escapes.svg">
-		<a href="#">Get in Touch</a>
+		<a class="btn" href="#">Get in Touch</a>
 		<nav>
 			<ul>
 				<li><a href="#our-beginning">Our Beginning</a></li>
@@ -21,11 +22,26 @@
 	</header>
 
 	<div class="large-hero">
-		<img src="assets/images/hero--large.jpg">
-		<h1>Your clarity.</h1>
-		<h2>One trip away.</h2>
-		<p>We create soul restoring journeys that inspire you to be you.</p>
-		<p><a href="#">Get Started Today</a></p>
+		<!-- responsive images 
+				1. art direction and aspect ratio use pitcure element with media property
+					https://developer.mozilla.org/en-US/docs/Web/HTML/Element/picture
+				
+				2. file size without needing to serve images of different shapes use img tag with srcset and sizes attributes
+		
+		-->
+		<picture>
+			<source srcset="./assets/images/hero--large-i.jpg" media="(min-width:1380px)">
+			<source srcset="./assets/images/hero--medium-i.jpg" media="(min-width:990px)">
+			<source srcset="./assets/images/hero--small-i.jpg" media="(min-width:530px)">
+
+			<img src="./assets/images/hero--smaller-i.jpg">
+		</picture>
+		<div class="large-hero__text-content">
+			<h1 class="large-hero__title">Your clarity.</h1>
+			<h2 class="large-hero__subtitle">One trip away.</h2>
+			<p class="large-hero__statement">We create soul restoring journeys that inspire you to be you.</p>
+			<p class="large-hero__cta"><a class="btn btn--orange btn--lg" href="#">Get Started Today</a></p>
+		</div>
 	</div>
 
 	<div id="our-beginning">
@@ -81,7 +97,7 @@
 	</div>
 
 	<footer>
-		<p>Copyright &copy; 2016 Clear View Escapes. All rights reserved. <a href="#">Get in Touch</a></p>
+		<p>Copyright &copy; 2016 Clear View Escapes. All rights reserved. <a href="#" class="btn btn--orange">Get in Touch</a></p>
 	</footer>
 </body>
 </html>
