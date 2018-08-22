@@ -1,0 +1,5 @@
+
+.container{
+	padding-left: $gutter;
+	padding-right: $gutter;
+}
