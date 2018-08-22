@@ -496,13 +496,34 @@ picture img{
 	padding-right: 18px;
 }
 
+.section{
+	padding-top:3rem;
+	padding-bottom:3rem;
+}
+
+.section--first{
+		padding-top: calc(3rem * 2);
+	}
+
+.section--blue{
+		background-color:#2f5572;
+		color: white;
+	}
+
+.text-content{
+	max-width:1200px;
+	margin-left: auto;
+	margin-right: auto;
+}
+
 /* Hero Component */
 
 .large-hero {
 
 	position: relative;
 	margin-left: -18px;
-	margin-right: -18px;
+	margin-right: -18px;;
+	border-bottom:5px solid #2f5572;
 }
 
 .large-hero *{
