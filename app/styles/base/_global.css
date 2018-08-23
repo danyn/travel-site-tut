@@ -27,8 +27,8 @@ img{
 picture {
 	display: block;
 	img{
-		display:block;
-		width:100%;
+		display: block;
+		width: 100%;
 		height: auto;
 	}
 }
@@ -41,6 +41,11 @@ picture {
   display: table
 }
 .clearfix:after { clear: both }
+
+.img-full{
+	width:100%;
+	display:block;
+}
 
 
 

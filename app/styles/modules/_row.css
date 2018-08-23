@@ -1,0 +1,32 @@
+@mixin mediumScreen{
+	.row-medium{
+		@mixin clearfix;
+		>div{
+			float:left;
+			position: relative;
+		}
+		&--gutter{
+			margin-right: -3rem;
+			/* margin-left: -1rem; */
+		}
+		&--gutter	> div{
+			padding-right: 3rem;
+		}
+
+			&__one-third{
+				width: calc(1/3 * 100%);
+			}
+			&__two-third{
+				width: calc(2/3 * 100%);
+			}
+
+			&__pull-right-one-third{
+				right: calc(-1/3 * 100%);
+			}
+			&__pull-left-two-third{
+				left: calc(-2/3 * 100%);
+			}	
+	}
+}
+
+
