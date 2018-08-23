@@ -18,6 +18,17 @@
 		color: white;
 	}
 
+	&--testimonials{
+		padding-top: 0;
+		background: url(/assets/images/testimonials-bg.jpg) top center no-repeat;
+		background-size: cover;
+			.icon-headline img{
+				transform: translateY(19px);
+				margin-right: 1.2rem;
+				
+			}
+	}
+
 }
 
 
