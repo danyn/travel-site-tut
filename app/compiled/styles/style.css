@@ -637,7 +637,7 @@ picture img{
 
 /* paragraphs */
 
-.main p{
+.main{
 	font-size:1.1rem;
 	font-weight:300;
 	line-height: 1.5;
@@ -809,18 +809,24 @@ picture img{
 
 	}
 
+#features{
+	padding-top: 1em;
+	color: white;
+}
+
 .feature{
+
 	position: relative;
 	padding-left: 100px;
 }
 
-.feature p{
-		color:white;
+.feature__text{
+
 		font-weight:200;
 		padding-bottom:2.5rem;
 	}
 
-.feature h3{
+.feature__heading{
 		font-size:1.65rem;
 		font-weight:300;
 	}

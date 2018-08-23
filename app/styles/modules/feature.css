@@ -1,17 +1,26 @@
-.feature{
-	
 
-	p{
-		color:white;
+#features{
+	padding-top: 1em;
+	color: white;
+}
+
+
+.feature{
+
+	position: relative;
+	padding-left: 100px;
+	
+	&__text{
+
 		font-weight:200;
 		padding-bottom:2.5rem;
 	}
-	h3{
+
+	&__heading{
 		font-size:1.65rem;
 		font-weight:300;
 	}
-	position: relative;
-	padding-left: 100px;
+
 	&__img{
 		position:absolute;
 		left:0;
