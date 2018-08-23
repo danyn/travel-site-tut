@@ -8,7 +8,7 @@ $vertical-spacing : 1.7rem;
 
 	position: relative;
 	@mixin fullWidth{};
-	border-bottom:5px solid $blue;
+	border-bottom:10px solid $blue;
 
 	*{
 		margin:0;

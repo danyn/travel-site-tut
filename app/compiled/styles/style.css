@@ -491,6 +491,16 @@ picture img{
 		height: auto;
 	}
 
+/* layout helpers */
+
+.clearfix:before,
+.clearfix:after {
+  content: " ";
+  display: table
+}
+
+.clearfix:after { clear: both }
+
 .container{
 	padding-left: 18px;
 	padding-right: 18px;
@@ -499,6 +509,7 @@ picture img{
 .section{
 	padding-top:3rem;
 	padding-bottom:3rem;
+
 }
 
 .section--first{
@@ -506,15 +517,100 @@ picture img{
 	}
 
 .section--blue{
+		margin-top: 3rem;
 		background-color:#2f5572;
 		color: white;
 	}
 
-.text-content{
+.wrapper{
 	max-width:1200px;
 	margin-left: auto;
 	margin-right: auto;
+
+
 }
+
+.wrapper img{
+		display:block;
+	}
+
+.wrapper--medium{
+		max-width:976px;
+	}
+
+/* headings */
+
+.headline{
+	font-size: 2.5625rem;
+	font-weight: 300;
+	color: #2f5572;
+}
+
+.headline--light{
+		font-weight: 200;
+	}
+
+.headline--centered{
+		text-align: center;
+	}
+
+.headline--small{
+		font-size: 1.75rem;
+	}
+
+.headline--orange{
+		color:#d59542;
+	}
+
+.headline--narrow{
+		width:460px;
+		margin-left: auto;
+		margin-right: auto;
+	}
+
+.headline--b-margin-large{
+		margin-bottom: 1.4em;
+	}
+
+.headline--b-margin-small{
+		margin-bottom: 0.5em;
+	}
+
+/* paragraphs */
+
+p{
+	font-size:1.1rem;
+	font-weight:300;
+	line-height: 1.5;
+	margin-bottom: 2em;
+	color:#5a5a5a;
+}
+
+.btn{
+	display: inline-block;
+	background: #2f5572;
+	color:white;
+	padding:.75rem 1.2rem;
+	text-decoration: none;
+	border-radius:3px;
+}
+
+.btn:hover{
+		background: rgb(74, 135, 181)
+	}
+
+.btn--orange{
+		background: #d59542;
+	}
+
+.btn--orange:hover{
+			background: rgb(209, 138, 46)
+		}
+
+.btn--lg{
+		font-size:1.25em;
+		font-weight: 2;
+	}
 
 /* Hero Component */
 
@@ -523,7 +619,7 @@ picture img{
 	position: relative;
 	margin-left: -18px;
 	margin-right: -18px;;
-	border-bottom:5px solid #2f5572;
+	border-bottom:10px solid #2f5572;
 }
 
 .large-hero *{
@@ -607,30 +703,4 @@ picture img{
 
 .large-hero__cta {
 
-	}
-
-.btn{
-	display: inline-block;
-	background: #2f5572;
-	color:white;
-	padding:.75rem 1.2rem;
-	text-decoration: none;
-	border-radius:3px;
-}
-
-.btn:hover{
-		background: rgb(74, 135, 181)
-	}
-
-.btn--orange{
-		background: #d59542;
-	}
-
-.btn--orange:hover{
-			background: rgb(209, 138, 46)
-		}
-
-.btn--lg{
-		font-size:1.25em;
-		font-weight: 2;
 	}
