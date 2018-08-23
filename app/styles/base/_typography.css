@@ -46,9 +46,26 @@
 	}
 }
 
+.icon-headline{
+	
+	text-align: center;
+	font-size: 1.8rem;
+	img{
+		transform: translateY(12px);
+	}
+	@mixin mediumScreen{
+		font-size:3rem;
+			img{
+		transform: translateY(0px);
+		}
+	}
+	
+	
+}
+
 /* paragraphs */
 
-p{
+.main p{
 	font-size:1.1rem;
 	font-weight:300;
 	line-height: 1.5;
