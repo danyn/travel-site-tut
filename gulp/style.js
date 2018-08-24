@@ -14,5 +14,5 @@ gulp.task('css', () => {
 		this.emit('end') 
 		console.log(err.toString())
 	})
-	.pipe(gulp.dest('./app/compiled/styles/'))
+	.pipe(gulp.dest('./app/assets/styles/'))
 })
