@@ -3,6 +3,7 @@
   "version": "1.0.0",
   "dependencies": {
     "basscss": "^8.0.4",
+    "cli": "^1.0.1",
     "jquery": "3.2.1",
     "jquery-smooth-scroll": "2.2.0",
     "lazysizes": "4.0.1",
@@ -35,6 +36,10 @@
     "postcss-mixins": "6.2.0",
     "postcss-nested": "2.1.2",
     "postcss-simple-vars": "4.1.0",
-    "webpack": "3.8.1"
-  }
+    "webpack": "^4.17.1",
+    "webpack-cli": "^3.1.0"
+	},
+	"scripts": {
+		"webpack": "webpack --config webpack.config.js"
+	}
 }

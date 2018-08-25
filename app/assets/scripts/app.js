@@ -1,10 +1,10 @@
-function Person(name, favColor) {
-	this.favoriteColor = favColor;
-	this.name = name;
-	this.greet = function() {
-		console.log(`This is ${this.name} and my favorite color is ${this.favoriteColor}`);
-	}
-}
+const $ = require('jquery')
+const Person = require('./modules/Person')
 
 var john = new Person('John', 'green');
 john.greet();
+console.log(Person)
+var Tina = new Person("Tina", "bergundy")
+Tina.greet()
+
+$('h1').remove();
