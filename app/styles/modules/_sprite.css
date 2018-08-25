@@ -2,7 +2,7 @@
  
 .svg-icon{
 	display: inline-block;
-	background-image: url('/assets/images/sprite/sprite-c87e9e8f.svg');
+	background-image: url('/assets/images/sprite/sprite-69f19c2e.svg');
 }
 .svg-icon--clear-view-escapes {
 	width: 142.4px;
@@ -12,50 +12,55 @@
 .svg-icon--comment {
 	width: 64px;
 	height: 64px;
-	background-position: 32.1608040201005% 99.62096774193549%;
+	background-position: 99.70443349753694% 0;
 }
 .svg-icon--facebook {
 	width: 21.23px;
 	height: 42.01px;
-	background-position: 82.06146337428135% 72.64881156243578%;
+	background-position: 26.040607071652357% 45.795830448496034%;
 }
 .svg-icon--fire {
 	width: 56px;
 	height: 64px;
-	background-position: 68.79227053140097% 0;
+	background-position: 0 99.56481481481481%;
 }
 .svg-icon--globe {
 	width: 64px;
 	height: 64px;
-	background-position: 0 99.62096774193549%;
+	background-position: 27.586206896551722% 99.56481481481481%;
 }
 .svg-icon--instagram {
 	width: 42.01px;
 	height: 42.01px;
-	background-position: 99.38458753789764% 72.64881156243578%;
+	background-position: 63.2917018534157% 49.234556504346486%;
 }
 .svg-icon--mail {
 	width: 64px;
 	height: 48px;
-	background-position: 64.321608040201% 88.23571428571428%;
+	background-position: 0 48.00806451612903%;
 }
 .svg-icon--rain {
 	width: 64px;
 	height: 64px;
-	background-position: 99.69849246231156% 0;
+	background-position: 99.70443349753694% 59.25925925925926%;
 }
 .svg-icon--star {
 	width: 64px;
 	height: 64px;
-	background-position: 30.150753768844222% 48.00806451612903%;
+	background-position: 59.11330049261084% 99.56481481481481%;
 }
 .svg-icon--twitter {
 	width: 51.78px;
 	height: 42.06px;
-	background-position: 93.93049900577597% 43.85363848156777%;
+	background-position: 94.04330452560171% 98.50700323226104%;
 }
 .svg-icon--wifi {
 	width: 60px;
 	height: 64px;
-	background-position: 0 48.00806451612903%;
+	background-position: 68.79227053140097% 0;
+}
+.svg-icon--youtube {
+	width: 34.75px;
+	height: 42px;
+	background-position: 36.69752421959096% 45.792307692307695%;
 }

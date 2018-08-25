@@ -50,4 +50,4 @@ gulp.task('moveSpriteCss',['createSprite'] , () => {
 	.pipe(gulp.dest('./app/styles/modules/'))
 });
 
-gulp.task('includeSprite', ['createSprite','moveSpriteCss', 'moveSprite' , 'removeIntermediateFiles'] );
+gulp.task('sprite', ['createSprite','moveSpriteCss', 'moveSprite' , 'removeIntermediateFiles'] );
