@@ -1,15 +1,43 @@
 .site-header{
+
 	position: absolute;
 	z-index: 1;
 	width: 100%;
-	transition: all 2s ease;
+	transition: background-color .3s ease-out;
+
 	@mixin mediumScreen{
-		background: #2f557291;
+	
+		background-color: #2f557291;
 	}
 
 	&--mobile{
-		background: color($blue a(60%));
-		height: 200px;
+			background-color:color($blue a(0.6));
+	}
+
+	&__content{
+		position: relative;
+		opacity:0;
+		padding-top:100px;
+		text-align: center;
+		z-index:-1;
+		transform: scale(1.2);
+		transition: all .3s;
+		width:80%;
+		margin: 0 auto;
+
+		@mixin mediumScreen{
+			position: static;
+			z-index: 1;
+			opacity: 1;
+			padding-top: 0;
+			transform: scale(1);
+		}
+		&--mobile{
+			opacity: 1;
+			z-index: 1;
+			transform: scale(1);
+		}
+
 	}
 
 	&__logo{
@@ -36,59 +64,41 @@
 	}
 
 	&__contact{
-			display: none;
-			&--mobile{
-			
-			display:block;
-			position: absolute;
-			top:105px;
-			left: 50%;
-			transform: translateX(-50%);
-			font-size: 0.8em;
-		}
 
 		@mixin mediumScreen{
-			display: block;
 			float:right;
 			margin-top:4px;
 			margin-left:1em;
 		}
 	}
 
-		&__nav{
-		display: none;
+	&__nav{
 		color: white;
 		font-weight: 200;
-		transition: transform 1s;
-		@mixin mediumScreen{
-			position: static;
-			display: block;
-			float:right;
-		}
 		ul{
+			padding: 0 !important;
 			li{
 				display: inline-block;
 				list-style-type: none;
-			}
-		}
-
-		&--mobile{
-			display:block;
-			position: absolute;
-			top:145px;
-			width: 100%;
-			text-align:center;
-			ul {
-				padding: 0 !important;
-				font-size: 0.8rem;
-				li{
-				background: color($blue a(50%)) ;
+				background: $blue;
 				padding-top: 0.6em;
 				padding-bottom: 0.6em;
 				border-radius: 3px;
-				}
 			}
 		}
+
+		@mixin mediumScreen{
+			position: static;
+			float:right;
+			ul{
+				font-size: 1rem;
+				li{
+					background: transparent;
+					padding: unset;
+					border-radius: unset;
+					}
+				}
+			}
 	}
 
 	&__ham{
@@ -99,6 +109,7 @@
 		position: absolute;
 		right:15px;
 		top: 15px;
+		z-index:2;
 		@mixin mediumScreen{
 			display: none;
 		}
