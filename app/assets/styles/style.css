@@ -1095,8 +1095,9 @@ picture img{
 .site-header{
 	position: absolute;
 	z-index: 1;
-
 	width: 100%;
+	-webkit-transition: all 2s ease;
+	transition: all 2s ease;
 }
 
 @media(min-width: 800px) {
@@ -1104,6 +1105,11 @@ picture img{
 .site-header{
 		background: #2f557291
 }
+	}
+
+.site-header--mobile{
+		background: rgba(47, 85, 114, 0.6);
+		height: 200px;
 	}
 
 .site-header__logo{
@@ -1130,17 +1136,53 @@ picture img{
 			text-indent:-1000px;
 		}
 
+.site-header__link{
+		color: inherit;
+		text-decoration: none;
+		padding:0 1em;
+	}
+
+.site-header__contact{
+			display: none;
+	}
+
+.site-header__contact--mobile{
+			
+			display:block;
+			position: absolute;
+			top:105px;
+			left: 50%;
+			-webkit-transform: translateX(-50%);
+			        transform: translateX(-50%);
+			font-size: 0.8em;
+		}
+
+@media(min-width: 800px) {
+
+.site-header__contact{
+			display: block;
+			float:right;
+			margin-top:4px;
+			margin-left:1em
+	}
+	}
+
 .site-header__nav{
 		display: none;
-		float:right;
 		color: white;
 		font-weight: 200;
+		-webkit-transition: -webkit-transform 1s;
+		transition: -webkit-transform 1s;
+		transition: transform 1s;
+		transition: transform 1s, -webkit-transform 1s;
 	}
 
 @media(min-width: 800px) {
 
 .site-header__nav{
-			display: block
+			position: static;
+			display: block;
+			float:right
 	}
 	}
 
@@ -1149,40 +1191,35 @@ picture img{
 				list-style-type: none;
 			}
 
-.site-header__link{
-		color: inherit;
-		text-decoration: none;
-		padding:0 1em;
-	}
+.site-header__nav--mobile{
+			display:block;
+			position: absolute;
+			top:145px;
+			width: 100%;
+			text-align:center;
+		}
 
-.site-header__contact{
-		display: none;
-		float:right;
-		margin-top:4px;
-		margin-left:1em;
-	
-	}
+.site-header__nav--mobile ul {
+				padding: 0 !important;
+				font-size: 0.8rem;
+			}
 
-@media(min-width: 800px) {
-
-.site-header__contact{
-			display: block
-	
-	}
-	}
+.site-header__nav--mobile ul li{
+				background: rgba(47, 85, 114, 0.5);
+				padding-top: 0.6em;
+				padding-bottom: 0.6em;
+				border-radius: 3px;
+				}
 
 .site-header__ham{
 		width:30px;
 		height:30px;
-	
 		display:block;
 		background: white;
 		position: absolute;
 		right:15px;
 		top: 15px;
 	}
-
-/* transform: translate(-20px, 20px); */
 
 @media(min-width: 800px) {
 
