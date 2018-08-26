@@ -15,6 +15,7 @@ class MobileMenu {
 	toggleHam() {
 		this.header.toggleClass('site-header--mobile')
 		this.content.toggleClass('site-header__content--mobile')
+		this.ham.toggleClass('site-header__ham--clicked')
 	}
 }
 

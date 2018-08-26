@@ -21,15 +21,17 @@
 		text-align: center;
 		z-index:-1;
 		transform: scale(1.2);
-		transition: all .3s;
 		width:80%;
 		margin: 0 auto;
+		transition: all .3s;
 
 		@mixin mediumScreen{
 			position: static;
 			z-index: 1;
 			opacity: 1;
 			padding-top: 0;
+			width: 100%;
+			margin: 0;
 			transform: scale(1);
 		}
 		&--mobile{
@@ -105,7 +107,6 @@
 		width:30px;
 		height:30px;
 		display:block;
-		background: white;
 		position: absolute;
 		right:15px;
 		top: 15px;
@@ -113,5 +114,33 @@
 		@mixin mediumScreen{
 			display: none;
 		}
+		&::before{
+			@mixin bar{top:0; content: ""};
+			
+		}
+		&::after{
+			@mixin bar{top:25px; content: ""};
+		}
+		&__menu-icon{
+		@mixin bar{top:12.5px};
+		}
+
+		&--clicked{
+			&::before{
+				transform-origin:top left;
+				transform: rotate(45deg) scaleX(1.28);
+			}
+
+			.site-header__ham__menu-icon{
+				display:none;
+			}
+
+			&::after{
+				transform-origin:bottom left;
+				transform: rotate(-45deg) scaleX(1.28) translateY(1px);
+			}
+
+		}
 	}
+
 }
