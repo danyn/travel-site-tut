@@ -4,9 +4,15 @@ const browserSync = require('browser-sync')
 
 
 
-gulp.task('html', () => {
+gulp.task('reload', () => {
 	browserSync.reload()
 })
+
+gulp.task('reloadScripts',['scripts'], () => {
+	browserSync.reload()
+})
+
+
 
 gulp.task('cssInject', ['css'], () => { 
 	return gulp.src('./app/assets/styles/style.css').pipe(browserSync.stream());
@@ -23,7 +29,11 @@ gulp.task('watch', () => {
 	})
 
 	watch('./app/index.html', () => {
-		gulp.start('html')
+		gulp.start('reload')
+	})
+
+	watch('./app/assets/scripts/**/*.js', () => {
+		gulp.start('reloadScripts')
 	})
 
 	watch('./app/styles/**/*.css', () => {

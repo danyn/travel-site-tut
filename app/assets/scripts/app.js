@@ -7,4 +7,5 @@ console.log(Person)
 var Tina = new Person("Tina", "bergundy")
 Tina.greet()
 
-$('h1').remove();
+// $('h1').remove();
+// 
