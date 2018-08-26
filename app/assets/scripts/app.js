@@ -1,11 +1,24 @@
-const $ = require('jquery')
-const Person = require('./modules/Person')
+// const $ = require('jquery')
+import $ from 'jquery'
 
-var john = new Person('John', 'green');
+// const Person = require('./modules/Person')
+import Person from './modules/Person'
+
+var john = new Person('logzi', 'green');
 john.greet();
-console.log(Person)
-var Tina = new Person("Tina", "bergundy")
+
+var Tina = new Person("Wina", "bergundy")
 Tina.greet()
 
-// $('h1').remove();
+
+class Baby extends Person{
+	hungry(){console.log('wawawa')}
+}
+
+var gary = new Baby("Gary", "red")
+
+gary.greet()
+gary.hungry()
+
+$('h1').remove();
 // 
