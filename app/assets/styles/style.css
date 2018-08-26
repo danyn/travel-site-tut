@@ -1095,9 +1095,16 @@ picture img{
 .site-header{
 	position: absolute;
 	z-index: 1;
-	background: #2f557291;
+
 	width: 100%;
 }
+
+@media(min-width: 800px) {
+
+.site-header{
+		background: #2f557291
+}
+	}
 
 .site-header__logo{
 		right:50%;
@@ -1161,5 +1168,25 @@ picture img{
 .site-header__contact{
 			display: block
 	
+	}
+	}
+
+.site-header__ham{
+		width:30px;
+		height:30px;
+	
+		display:block;
+		background: white;
+		position: absolute;
+		right:15px;
+		top: 15px;
+	}
+
+/* transform: translate(-20px, 20px); */
+
+@media(min-width: 800px) {
+
+.site-header__ham{
+			display: none
 	}
 	}
