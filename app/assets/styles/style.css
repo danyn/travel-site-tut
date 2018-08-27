@@ -1299,16 +1299,13 @@ picture img{
 .reveal{
 	-webkit-transition: all 2s;
 	transition: all 2s;
+	-webkit-transform: scale(1);
+	        transform: scale(1);
+	
 }
 
 .reveal--hidden{
-		-webkit-transform: scale(.8);
-		        transform: scale(.8);
+		-webkit-transform: scale(1.2);
+		        transform: scale(1.2);
 		opacity: 0;
-	}
-
-.reveal--visible{
-		opacity:1;
-		-webkit-transform: scale(1);
-		        transform: scale(1);
 	}
