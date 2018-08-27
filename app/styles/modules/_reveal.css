@@ -1,0 +1,12 @@
+.reveal{
+	transition: all 2s;
+	&--hidden{
+		transform: scale(.8);
+		opacity: 0;
+	}
+	
+	&--visible{
+		opacity:1;
+		transform: scale(1);
+	}
+}
