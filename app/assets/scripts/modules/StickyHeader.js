@@ -1,38 +1,57 @@
 
 import $ from 'jquery';
 import waypoints from '../../../../node_modules/waypoints/lib/noframework.waypoints.js';
+import smoothScroll from 'jquery-smooth-scroll'
 
 
 
 class StickyHeader {
 	constructor() {
 		this.header = $('.site-header');
-		// this.logo = $('.site-header__logo');
 		this.trigger = $('.large-hero__title');
-
-		this.headerWaypoint();
+		this.inPageNavItems = $('.section');
+		this.navItems = $('.site-header__link');
+		this.smoothScrolling();
+		this.observeHeader();
+		this.scrollSpy();
 	}
 
-	headerWaypoint() {
-		const Clss = this 
+	smoothScrolling(){
+		this.navItems.smoothScroll();
+	}
+
+	observeHeader() {
+		const clss = this 
 		
 		new Waypoint({
 			element: this.trigger[0],
 			handler: function(d) {
 				if(d==="down"){
-					Clss.header.addClass('site-header--scrolled')
-					// Clss.logo.addClass('site-header__logo--scrolled')
+					clss.header.addClass('site-header--scrolled')
 				}else{
-					Clss.header.removeClass('site-header--scrolled')
-					// Clss.logo.removeClass('site-header__logo--scrolled')
+					clss.header.removeClass('site-header--scrolled')
 				}
 			}
 		})
 
 	}
 
+	scrollSpy() {
 
+		const clss = this;
 
+		this.inPageNavItems.each( function (){
+			let spied = $(this).attr("data-a");
+			new Waypoint({
+				element:$(this)[0],
+				handler: function(){
+					console.log();
+					clss.navItems.removeClass('site-header__link--active');
+					$(spied).addClass('site-header__link--active');
+				}
+			})
+		})
+	}
 }
 
 export default StickyHeader;

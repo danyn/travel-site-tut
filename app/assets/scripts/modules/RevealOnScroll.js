@@ -30,10 +30,10 @@ class RevealOnScroll {
 	}
 
 	showObject(){
-		console.dir(this.selected)
+		// console.dir(this.selected)
 
 		this.selected.each(function(){
-			console.dir(this);
+			// console.dir(this);
 		})
 	}
 

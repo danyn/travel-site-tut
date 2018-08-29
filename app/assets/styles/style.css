@@ -1216,6 +1216,10 @@ picture img{
 		padding:0 1em;
 	}
 
+.site-header__link--active{
+			color: #d59542;
+		}
+
 @media(min-width: 800px) {
 
 .site-header__contact{
