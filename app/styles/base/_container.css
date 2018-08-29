@@ -8,35 +8,6 @@
 	}
 }
 
-.section{
-	overflow: hidden;
-	padding-top:$verticalSpace;
-	padding-bottom:$verticalSpace;
-	
-	&--first{
-		padding-top: calc($verticalSpace * 2);
-	}
-
-	&--blue{
-		background-color:$blue;
-		color: white;
-	}
-
-	&--testimonials{
-		padding-top: 0;
-		@mixin largeScreen{
-			background: url(/assets/images/testimonials-bg.jpg) top center no-repeat;
-			background-size: cover;
-		}
-		.icon-headline__icon{
-			transform: translateY(19px);
-			margin-right: 1.2rem;
-		}
-	}
-
-}
-
-
 .wrapper{
 	max-width:1200px;
 	margin-left: auto;
@@ -49,7 +20,7 @@
 	&--medium{
 		max-width:976px;
 	}
-
-
 }
+
+
 
