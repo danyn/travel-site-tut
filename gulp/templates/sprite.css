@@ -4,12 +4,12 @@
 {{#first}}
 .svg-icon{
 	display: inline-block;
-	background-image: url('/assets/images/sprite/{{{sprite}}}');
+	background-image: url('../../assets/images/sprite/{{{sprite}}}');
 }
 
 .no-svg .svg-icon{
 	display: inline-block;
-	background-image: url('/assets/images/sprite/{{#replaceSvgPng}}{{{sprite}}}{{/replaceSvgPng}}');
+	background-image: url('../../assets/images/sprite/{{#replaceSvgPng}}{{{sprite}}}{{/replaceSvgPng}}');
 }
 
 {{/first}}

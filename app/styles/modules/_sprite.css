@@ -2,12 +2,12 @@
  
 .svg-icon{
 	display: inline-block;
-	background-image: url('/assets/images/sprite/sprite-e79e95cc.svg');
+	background-image: url('../../assets/images/sprite/sprite-e79e95cc.svg');
 }
 
 .no-svg .svg-icon{
 	display: inline-block;
-	background-image: url('/assets/images/sprite/sprite-e79e95cc.png');
+	background-image: url('../../assets/images/sprite/sprite-e79e95cc.png');
 }
 
 .svg-icon--clear-view-escapes {
