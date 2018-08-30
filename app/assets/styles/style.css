@@ -1366,7 +1366,18 @@ picture img{
 	background-color: rgba(255,255,255,0.95);
 	opacity: 0;
 	visibility: hidden;
+	-webkit-transform: scale(1.1);
+	        transform: scale(1.1);
+	-webkit-transition: all .3s;
+	transition: all .3s;
 }
+
+.modal--visible{
+		opacity: 1;
+		visibility: visible;
+		-webkit-transform: scale(1);
+		        transform: scale(1);
+	}
 
 .modal__container{
 		max-width: 600px;
