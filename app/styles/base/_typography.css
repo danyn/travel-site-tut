@@ -50,8 +50,8 @@
 	
 	text-align: center;
 	font-size: 1.8rem;
-	img{
-		transform: translateY(12px);
+	span{
+		transform: translate(-12px, 8px);
 	}
 	@mixin mediumScreen{
 		font-size:3rem;
