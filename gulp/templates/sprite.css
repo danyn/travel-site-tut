@@ -6,6 +6,12 @@
 	display: inline-block;
 	background-image: url('/assets/images/sprite/{{{sprite}}}');
 }
+
+.no-svg .svg-icon{
+	display: inline-block;
+	background-image: url('/assets/images/sprite/{{#replaceSvgPng}}{{{sprite}}}{{/replaceSvgPng}}');
+}
+
 {{/first}}
 .svg-icon--{{base}} {
 	width: {{width.outer}}px;

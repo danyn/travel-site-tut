@@ -53,7 +53,6 @@ class StickyHeader {
 			new Waypoint({
 				element:$(this)[0],
 				handler: function(){
-					console.log();
 					clss.navItems.removeClass('site-header__link--active');
 					$(spied).addClass('site-header__link--active');
 				}
