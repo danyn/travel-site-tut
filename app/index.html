@@ -4,6 +4,7 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1" />
 	<link href="https://fonts.googleapis.com/css?family=Roboto:100,300,400" rel="stylesheet">
 	<link rel="stylesheet" href="./assets/styles/style.css">
+	<script type="text/javascript" src="dist/vendor.js"></script>
 	<title>Clear View Escapes</title>
 	<meta name="keywords" content="Travel planning, travel bundles, travel escapes, book hotels in victoria BC">
 	<meta name="description" content="Your clarity. One trip away. We create soul restoring journeys that inspire you to be you. You won't forget yourself!">
@@ -44,11 +45,13 @@
 					2. file size without needing to serve images of different shapes use img tag with srcset and sizes attributes
 			-->
 			<picture>
-				<source srcset="./assets/images/hero--large.jpg 1920w, ./assets/images/hero--large-hi-dpi.jpg 3840w " media="(min-width:1380px)">
-				<source srcset="./assets/images/hero--medium.jpg 1380w, ./assets/images/hero--medium-hi-dpi.jpg 2760w " media="(min-width:990px)">
-				<source srcset="./assets/images/hero--small.jpg 990w, ./assets/images/hero--small-hi-dpi.jpg 1980w  " media="(min-width:530px)">
+				<source data-srcset="./assets/images/hero--large.jpg 1920w, ./assets/images/hero--large-hi-dpi.jpg 3840w " media="(min-width:1380px)">
+				<source data-srcset="./assets/images/hero--medium.jpg 1380w, ./assets/images/hero--medium-hi-dpi.jpg 2760w " media="(min-width:990px)">
+				<source data-srcset="./assets/images/hero--small.jpg 990w, ./assets/images/hero--small-hi-dpi.jpg 1980w  " media="(min-width:530px)">
 
-				<img srcset="./assets/images/hero--smaller.jpg 640w, ./assets/images/hero--smaller-hi-dpi.jpg 1280w">
+				<img
+					data-srcset="./assets/images/hero--smaller.jpg 640w, ./assets/images/hero--smaller-hi-dpi.jpg 1280w"
+					class="lazyload">
 			</picture>
 			<div class="large-hero__text-content">
 				<h1 class="large-hero__title">Your clarity. Clear as Day.</h1>
@@ -62,7 +65,10 @@
 			<h2 class="headline headline--centered headline--light headline--b-margin-small">The first trip we planned <strong>was our own.</strong></h2>
 			<h3 class="headline headline--small headline--light headline--orange headline--narrow headline--b-margin-large">Ever since, we&rsquo;ve been working to make travel <strong>better for everyone.</strong></h3>
 			<div class="wrapper wrapper--medium">
-				<img srcset="assets/images/first-trip-low-res-i.jpg 565w,  assets/images/first-trip-i.jpg 976w " alt="Couple walking down a street.">
+				<img
+					data-srcset="assets/images/first-trip-low-res-i.jpg 565w,  assets/images/first-trip-i.jpg 976w "
+					alt="Couple walking down a street."
+					class="lazyload">
 			</div>
 
 			<div class="section--vertically-spaced">
@@ -75,9 +81,12 @@
 					</div>
 					<div class="row-medium__one-third row-medium__pull-left-two-third">
 						<picture>
-							<source srcset="assets/images/our-start-i.jpg" media="(min-width:960px)">
-							<source srcset="assets/images/our-start-portrait-i.jpg" media="(min-width: 800px)">
-							<img src="assets/images/our-start-landscape-small-i.jpg" alt="Our founder, Jane Doe" class="img-full" >
+							<source data-srcset="assets/images/our-start-i.jpg" media="(min-width:960px)">
+							<source data-srcset="assets/images/our-start-portrait-i.jpg" media="(min-width: 800px)">
+							<img
+								data-src="assets/images/our-start-landscape-small-i.jpg"
+								alt="Our founder, Jane Doe"
+								class="img-full lazyload" >
 						</picture>
 					</div>
 				</div>
@@ -124,13 +133,17 @@
 			</div>
 		</div>
 
-		<div id="testimonials" class="section section--testimonials section--vertically-spaced" data-a="#a-testimonials" >
+		<div id="testimonials" class="section section--testimonials section--vertically-spaced lazyload" data-a="#a-testimonials" >
 			<div class="wrapper">
 				<h2 class="icon-headline"><span class="svg-icon svg-icon--comment icon-headline__icon"></span>Real Testimonials</h2>
 				<div class="row-large--flex row-large--gutter pt-testimonial">
 						<div class="row-large__one-third ">
 								<div class="testimonial">
-									<img class="testimonial__witness" sizes="160px" srcset="assets/images/testimonial-jane.jpg 160w, assets/images/testimonial-jane-hi-dpi.jpg 320w" alt="Jane">
+									<img
+										class="testimonial__witness lazyload"
+										sizes="160px"
+										data-srcset="assets/images/testimonial-jane.jpg 160w, assets/images/testimonial-jane-hi-dpi.jpg 320w"
+										alt="Jane">
 									<h3 class="testimonial__name">Jane Doe</h3>
 									<h3 class="testimonial__headline">9 Time Escaper</h3>
 									<p class="testimonial__statement">&ldquo;Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.&rdquo;</p>
@@ -139,9 +152,9 @@
 						<div class="row-large__one-third">
 							<div class="testimonial">
 								<img
-									class="testimonial__witness"
+									class="testimonial__witness lazyload"
 									sizes="160px"
-									srcset="assets/images/testimonial-john.jpg 160w, assets/images/testimonial-john-hi-dpi.jpg 320w"
+									data-srcset="assets/images/testimonial-john.jpg 160w, assets/images/testimonial-john-hi-dpi.jpg 320w"
 									alt="John">
 								<h3 class="testimonial__name">John Smith</h3>
 								<h3 class="testimonial__headline">4 Time Escaper</h3>
@@ -151,11 +164,11 @@
 						<div class="row-large__one-third">
 							<div class="testimonial">
 								<img
-									class="testimonial__witness"
+									class="testimonial__witness lazyload"
 									sizes="160px"
-									srcset="assets/images/testimonial-cat.jpg 160w, assets/images/testimonial-cat-hi-dpi.jpg 320w"
+									data-srcset="assets/images/testimonial-cat.jpg 160w, assets/images/testimonial-cat-hi-dpi.jpg 320w"
 									alt="Cat McKitty"
-									src="assets/images/testimonial-cat.jpg">
+									data-src="assets/images/testimonial-cat.jpg">
 								<h3 class="testimonial__name">Cat McKitty</h3>
 								<h3 class="testimonial__headline">6 Time Escaper</h3>
 								<p class="testimonial__statement">&ldquo;Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut.&rdquo;</p>

@@ -659,11 +659,10 @@ picture img{
 	}
 
 @media(min-width: 1010px) {
-
-.section--testimonials{
-			background: url(/assets/images/testimonials-bg.jpg) top center no-repeat;
-			background-size: cover
-	}
+			.section--testimonials.lazyloaded{
+				background: url(/assets/images/testimonials-bg.jpg) top center no-repeat;
+				background-size: cover;
+			}
 	}
 
 .section--testimonials .icon-headline__icon{
